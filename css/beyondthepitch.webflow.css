@@ -1,0 +1,7365 @@
+body {
+  max-width: 100%;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: pragmatica, sans-serif;
+  color: #fff;
+  font-size: 75px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: freight-big-pro, sans-serif;
+  color: #fff;
+  font-size: 32px;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: pragmatica, sans-serif;
+  color: #999;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 10px;
+  font-family: pragmatica, sans-serif;
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: underline;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #1b1d1e;
+}
+
+.menu {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 11;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-top: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.logo {
+  position: fixed;
+  left: 15px;
+  top: 30px;
+  width: 5vw;
+  height: 5vw;
+  margin-top: 0%;
+  background-image: url('../images/Logo_1.png');
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.logo.psg {
+  left: 17%;
+  width: 5vw;
+  height: 5vw;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
+.logo.psg:hover {
+  opacity: 1;
+}
+
+.logo.psg.w--current {
+  left: 16%;
+  opacity: 1;
+}
+
+.logo.psg.low {
+  opacity: 0.4;
+}
+
+.logo.main {
+  background-image: url('../images/logo.png');
+}
+
+.logo.nigeria {
+  left: 32%;
+  background-image: url('../images/Logo-white.png');
+  opacity: 1;
+}
+
+.logo.nigeria.low {
+  left: 32%;
+  opacity: 0.4;
+}
+
+.logo.nigeria.low:hover {
+  opacity: 1;
+}
+
+.logo.juve {
+  left: 51%;
+  top: 30px;
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-left: 0%;
+  background-image: url('../images/Juve_logo.png');
+  background-size: auto 100%;
+  opacity: 1;
+}
+
+.logo.juve.w--current {
+  left: 48%;
+}
+
+.logo.juve.low {
+  left: 48%;
+  opacity: 0.4;
+}
+
+.logo.juve.low:hover {
+  opacity: 1;
+}
+
+.logo.nike {
+  left: 68%;
+  width: 5.5vw;
+  height: 5.5vw;
+  background-image: url('../images/nike-futura-white.png');
+  background-size: 100%;
+  opacity: 1;
+}
+
+.logo.nike.w--current {
+  left: 64%;
+}
+
+.logo.nike.low {
+  left: 64%;
+  opacity: 0.4;
+}
+
+.logo.nike.low:hover {
+  opacity: 1;
+}
+
+.logo.nike.low.w--current {
+  opacity: 1;
+}
+
+.logo.adidas {
+  left: 85%;
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-left: 0%;
+  background-image: url('../images/Adidas_logo.png');
+  background-size: 100%;
+  opacity: 1;
+}
+
+.logo.adidas.w--current {
+  left: 80%;
+}
+
+.logo.adidas.low {
+  left: 80%;
+  opacity: 0.4;
+}
+
+.logo.adidas.low:hover {
+  opacity: 1;
+}
+
+.sitelogo {
+  position: fixed;
+  left: 30px;
+  top: 15px;
+  width: 7vw;
+  height: 7vw;
+  background-image: url('../images/logo.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.sitelogo.background {
+  background-color: #1b1d1e;
+  background-image: none;
+}
+
+.div-block {
+  position: absolute;
+  top: 70px;
+  display: none;
+  width: 100%;
+  height: 1px;
+  margin-top: 0px;
+  background-color: #fff;
+}
+
+.header {
+  position: static;
+}
+
+.header.name {
+  position: relative;
+  left: -23%;
+  top: 207px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  max-width: 600px;
+  margin-top: 0px;
+  padding-left: 0px;
+  clear: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.heading {
+  width: 700px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.heading.main {
+  font-size: 75px;
+}
+
+.heading.main.juve {
+  width: 300px;
+}
+
+.heading.main.adidas {
+  width: 325px;
+  font-size: 85px;
+}
+
+.heading.juve {
+  width: 400px;
+  font-size: 100px;
+}
+
+.heading.adidas {
+  width: 400px;
+  font-size: 100px;
+}
+
+.heading-2 {
+  width: 700px;
+  margin-top: 20px;
+  font-family: termina, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  text-align: center;
+}
+
+.heading-2.main {
+  font-size: 65px;
+}
+
+.heading-2.main.juve {
+  width: 300px;
+}
+
+.heading-2.main.adidas {
+  width: 300px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 70px;
+}
+
+.heading-2.juve {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 100px;
+}
+
+.heading-2.adidas {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 100px;
+}
+
+.heading3 {
+  width: 700px;
+  margin-top: 10px;
+  font-family: freight-big-pro, sans-serif;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+.heading3.main {
+  margin-top: 5px;
+  font-size: 85px;
+  line-height: 82px;
+}
+
+.heading3.main.nigeria {
+  position: absolute;
+  left: -184px;
+  top: 32px;
+  width: 450px;
+  font-size: 7em;
+}
+
+.heading3.main.juve {
+  width: 300px;
+  margin-top: 0px;
+}
+
+.heading3.main.nike {
+  position: absolute;
+  left: -147px;
+  top: 38px;
+  width: 400px;
+  font-size: 7em;
+  line-height: 72px;
+}
+
+.heading3.main.adidas {
+  width: 400px;
+  margin-top: 0px;
+  font-size: 95px;
+  text-align: center;
+}
+
+.heading3.nigeria {
+  position: absolute;
+  left: 1vw;
+  top: -50px;
+  font-size: 115px;
+  line-height: 105px;
+}
+
+.heading3.juve {
+  width: 400px;
+  margin-top: 10px;
+  font-size: 115px;
+}
+
+.heading3.nike {
+  position: absolute;
+  left: auto;
+  top: auto;
+  z-index: 12;
+  width: 750px;
+  font-size: 115px;
+  line-height: 100px;
+  text-align: left;
+}
+
+.heading3.adidas {
+  width: 400px;
+  margin-top: 10px;
+  font-size: 115px;
+}
+
+.container {
+  position: relative;
+  top: 103px;
+  max-width: 600px;
+}
+
+.image {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 700px;
+}
+
+.paragraph {
+  position: absolute;
+  left: -44.1vw;
+  top: 456px;
+  z-index: 1;
+  display: block;
+  width: 900px;
+  max-width: 900px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  line-height: 34px;
+  cursor: default;
+}
+
+.paragraph._2 {
+  left: 5vw;
+  top: 2168px;
+  display: block;
+  width: 600px;
+}
+
+.paragraph._2.space {
+  top: 2079px;
+}
+
+.paragraph._2.nigeria {
+  left: -40vw;
+  top: 2184px;
+  width: 35vw;
+  max-width: 800px;
+}
+
+.paragraph._2.nike {
+  left: auto;
+  top: 2075px;
+  right: 5vw;
+}
+
+.paragraph._2.adidas {
+  left: -40vw;
+  top: 2184px;
+  width: 35vw;
+  max-width: 800px;
+}
+
+.paragraph.thin {
+  left: 15vw;
+  z-index: 11;
+  width: 500px;
+}
+
+.paragraph.thin._1 {
+  top: 552px;
+  width: 500px;
+}
+
+.paragraph.thin._1.juve {
+  left: -40vw;
+  top: 641px;
+  right: auto;
+  width: 30vw;
+}
+
+.paragraph.thin._1.nike {
+  left: 15vw;
+  right: auto;
+  width: 30vw;
+  max-width: 700px;
+}
+
+.paragraph.thin._1.adidas {
+  left: -47vw;
+  top: 641px;
+  right: auto;
+  width: 30vw;
+}
+
+.paragraph.thin._2 {
+  left: 5vw;
+  top: 2200px;
+  width: 35vw;
+}
+
+.paragraph.thin._2.nigeria {
+  top: 2123px;
+  width: 37vw;
+  max-width: 700px;
+}
+
+.paragraph.thin._2.juve {
+  left: 8vw;
+  top: 2550px;
+  width: 30vw;
+  max-width: 700px;
+}
+
+.paragraph.thin._2.adidas {
+  left: 2vw;
+  top: 2550px;
+  width: 40vw;
+  max-width: 800px;
+}
+
+.paragraph.thin._3 {
+  left: -46vw;
+  top: 1513px;
+  width: 700px;
+}
+
+.paragraph.thin._3.nigeria {
+  width: 45vw;
+  max-width: 800px;
+}
+
+.paragraph.thin._3.juve {
+  width: 45vw;
+  max-width: 800px;
+}
+
+.paragraph.thin._3.nike {
+  left: -42vw;
+  top: 1475px;
+  width: 40vw;
+}
+
+.paragraph.thin._3.adidas {
+  width: 45vw;
+  max-width: 800px;
+}
+
+.paragraph.thin._3.adidas {
+  left: -43vw;
+  top: 1720px;
+  width: 40vw;
+  max-width: 800px;
+}
+
+.paragraph.thin._4 {
+  left: 0vw;
+  top: 4230px;
+  width: 700px;
+}
+
+.paragraph.thin._4.juve {
+  top: 4445px;
+}
+
+.paragraph.thin._4.nike {
+  left: 3vw;
+  top: 4400px;
+  width: 40vw;
+}
+
+.paragraph.thin._4.adidas {
+  left: 7vw;
+  top: 4400px;
+  width: 35vw;
+}
+
+.paragraph.thin._11 {
+  top: 552px;
+  width: 500px;
+}
+
+.paragraph.thin._11.nigeria {
+  top: 569px;
+  width: 28vw;
+  max-width: 600px;
+}
+
+.paragraph.thin._11.juve {
+  left: -45vw;
+  top: 569px;
+  right: auto;
+  width: 40vw;
+  max-width: 600px;
+}
+
+.paragraph._1 {
+  width: 850px;
+}
+
+.paragraph._1.nigeria {
+  width: 52vw;
+}
+
+.paragraph._1.juve {
+  left: auto;
+  top: 475px;
+  right: auto;
+  width: 45vw;
+}
+
+.paragraph._1.nike {
+  left: -46vw;
+  top: 450px;
+  z-index: 11;
+  width: 48vw;
+}
+
+.paragraph._1.adidas {
+  left: auto;
+  top: 475px;
+  right: auto;
+  width: 45vw;
+}
+
+.paragraph.about {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.div-block-2 {
+  background-color: #fff;
+}
+
+.div-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.circlenav {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.circlenav._1 {
+  background-color: hsla(0, 0%, 100%, 0);
+}
+
+.circlenav._1.w--current {
+  background-color: #fff;
+}
+
+.circlenav._2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  background-color: hsla(0, 0%, 100%, 0);
+  opacity: 1;
+}
+
+.circlenav._2.w--current {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.circlenav._3 {
+  background-color: hsla(0, 0%, 100%, 0);
+  opacity: 1;
+}
+
+.circlenav._3.w--current {
+  background-color: #fff;
+}
+
+.circlenav._4 {
+  background-color: hsla(0, 0%, 100%, 0);
+  opacity: 1;
+}
+
+.circlenav._4.w--current {
+  background-color: #fff;
+}
+
+.circlenav.main.b.w--current {
+  opacity: 0.5;
+}
+
+.circlenav.main.c.w--current {
+  opacity: 0.5;
+}
+
+.circlenav.main.d.w--current {
+  opacity: 0.5;
+}
+
+.circlenav.main.e.w--current {
+  opacity: 0.5;
+}
+
+.circlenav.main-menu {
+  background-color: #fff;
+  opacity: 0;
+}
+
+.navguide {
+  position: fixed;
+  left: auto;
+  top: 45vh;
+  right: 5px;
+  bottom: 0%;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navguide.words {
+  top: 44.75vh;
+  right: 56px;
+  z-index: 20;
+  width: 115px;
+  height: 140px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.navguide.main {
+  left: 45vw;
+  top: 95vh;
+  right: auto;
+  bottom: auto;
+  display: none;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+.navguide.main._2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wordsnav {
+  position: static;
+  font-family: input-mono-condensed, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-align: right;
+}
+
+.wordsnav._1 {
+  font-family: input-mono-condensed, sans-serif;
+}
+
+.image-2 {
+  position: absolute;
+  left: -100px;
+  top: 121px;
+  z-index: 1;
+  width: 500px;
+}
+
+.image3 {
+  position: absolute;
+  left: 0px;
+  top: -300px;
+  z-index: 0;
+  display: inline-block;
+  width: 1200px;
+  float: right;
+  clear: none;
+}
+
+.vert_line {
+  position: absolute;
+  left: 5.7vw;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+  z-index: 9;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.vert_line._2 {
+  left: 0vw;
+  top: -150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4925px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.vert_line._2.nigeria {
+  height: 5000px;
+}
+
+.vert_line._2.juve {
+  height: 5000px;
+}
+
+.vert_line._2.nike {
+  left: 0vw;
+}
+
+.vert_line._2.adidas {
+  left: auto;
+  height: 5300px;
+}
+
+.vert_line._1 {
+  left: -28.9vw;
+  height: 4000px;
+}
+
+.vert_line._1.space {
+  height: 4400px;
+}
+
+.vert_line._1.nigeria {
+  left: -12.2vw;
+}
+
+.vert_line._1.juve {
+  left: 5.1vw;
+}
+
+.vert_line._1.nike {
+  left: 16.9vw;
+}
+
+.vert_line._1.adidas {
+  left: 33vw;
+}
+
+.vert_line._3 {
+  left: -23.4vw;
+  top: 1175px;
+  height: 3580px;
+}
+
+.vert_line._3.nigeria {
+  left: 5vw;
+  top: 899px;
+  height: 4000px;
+}
+
+.vert_line._3.juve {
+  left: 7.9vw;
+  top: 899px;
+  height: 4500px;
+}
+
+.vert_line._3.nike {
+  height: 4600px;
+}
+
+.vert_line._3.adidas {
+  left: 7.9vw;
+  top: 899px;
+  height: 4500px;
+}
+
+.vert_line._3.adidas {
+  left: -21vw;
+  top: 899px;
+  height: 4500px;
+}
+
+.vert_line._4 {
+  left: auto;
+  top: -120px;
+  right: 25vw;
+  z-index: auto;
+  height: 135%;
+}
+
+.vert_line._6 {
+  left: 0vw;
+  top: 4000px;
+  bottom: auto;
+  z-index: 0;
+  height: 600px;
+}
+
+.vert_line.intro {
+  left: auto;
+  z-index: auto;
+  opacity: 0;
+}
+
+.image4 {
+  position: absolute;
+  left: 40px;
+  top: -452px;
+}
+
+.circle {
+  position: relative;
+  left: 8%;
+  top: 368px;
+  z-index: 9;
+  width: 500px;
+  height: 500px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 250px;
+}
+
+.circle._1 {
+  position: absolute;
+}
+
+.paragraph-2 {
+  position: absolute;
+  top: -150px;
+  right: 10%;
+  width: 35%;
+  float: right;
+}
+
+.image-3 {
+  position: absolute;
+  top: -600px;
+  right: 10%;
+  width: 1000px;
+  float: right;
+}
+
+.image-4 {
+  position: relative;
+  left: 5%;
+  top: -650px;
+  width: 1100px;
+  float: left;
+}
+
+.container-2 {
+  position: relative;
+  left: 0px;
+  top: 645px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  max-width: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.image-5 {
+  position: relative;
+  width: 50vw;
+  height: auto;
+  max-width: none;
+}
+
+.image-6 {
+  position: relative;
+}
+
+.section {
+  position: relative;
+  left: -100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2 {
+  position: relative;
+  top: -650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.image-7 {
+  width: auto;
+  height: auto;
+}
+
+.outer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.outer._2 {
+  position: relative;
+  top: auto;
+  overflow: hidden;
+  height: 150vh;
+  max-width: 100%;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.outer._1 {
+  overflow: visible;
+  height: 4400px;
+  max-width: 1620px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.outer._1.juve {
+  height: 4450px;
+}
+
+.outer._1.nike {
+  height: 4425px;
+}
+
+.outer._1.adidas {
+  height: 4450px;
+}
+
+.outer._3 {
+  top: 0px;
+  overflow: visible;
+  height: 4250px;
+  max-width: 1620px;
+  margin-top: 150px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.outer._3.juve {
+  height: 4500px;
+  margin-top: 150px;
+}
+
+.outer._3.nike {
+  top: -14px;
+  height: 4100px;
+}
+
+.outer._3.adidas {
+  height: 4550px;
+  margin-top: 150px;
+}
+
+.outer._4 {
+  height: 5600px;
+  max-width: 1620px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.outer._4.nigeria {
+  height: 5500px;
+}
+
+.outer._4.nike {
+  height: 6600px;
+}
+
+.outer._4.adidas {
+  height: 5800px;
+}
+
+.outer._4.juve {
+  height: 5800px;
+}
+
+.outer.snap {
+  position: static;
+  display: block;
+  overflow: scroll;
+}
+
+.outer.jersey {
+  top: 230px;
+}
+
+.outer.trial {
+  position: relative;
+  top: auto;
+  overflow: hidden;
+  height: 150vh;
+  max-width: 100%;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inner {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 3750px;
+  max-width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.inner._2 {
+  overflow: visible;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inner._1 {
+  overflow: visible;
+}
+
+.inner._4 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inner.trial {
+  overflow: visible;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-5 {
+  position: absolute;
+  left: -42vw;
+  top: 225px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-5.main {
+  left: 198px;
+  top: 350px;
+  opacity: 1;
+}
+
+.div-block-5.main.juve {
+  left: 388px;
+  top: 300px;
+  width: 300px;
+}
+
+.div-block-5.main.adidas {
+  left: -100px;
+  top: 33px;
+  width: 300px;
+}
+
+.div-block-5.juve {
+  left: 10vw;
+  top: 225px;
+  right: auto;
+}
+
+.div-block-5.nike {
+  left: -46vw;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.div-block-5.adidas {
+  left: 5vw;
+  top: 225px;
+  right: auto;
+}
+
+.image-8 {
+  position: absolute;
+  left: 2vw;
+  top: 125px;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  width: 46vw;
+  max-width: 900px;
+}
+
+.image-9 {
+  position: absolute;
+  left: -24vw;
+  top: 1300px;
+  width: 71vw;
+  max-width: 1200px;
+}
+
+.image-9.space {
+  top: 1293px;
+}
+
+.image-9.nigeria {
+  left: -44vw;
+  width: 75vw;
+}
+
+.image-9.juve {
+  left: auto;
+  top: 1200px;
+  right: -45vw;
+  width: 75vw;
+}
+
+.image-9.nike {
+  left: auto;
+  right: -24vw;
+}
+
+.image-10 {
+  position: absolute;
+  left: -10vw;
+  top: 725px;
+  z-index: 10;
+  width: 500px;
+  height: 500px;
+  max-width: none;
+}
+
+.image-10.space {
+  top: 686px;
+}
+
+.image-10.nigeria {
+  left: 103px;
+  width: 25vw;
+  height: 25vw;
+  max-width: 500px;
+}
+
+.image-10.juve {
+  left: -42vw;
+  top: 800px;
+  right: auto;
+  display: none;
+  width: 15vw;
+  height: auto;
+  max-width: 500px;
+}
+
+.image-10.nike {
+  top: 1000px;
+  display: none;
+  height: auto;
+}
+
+.image-11 {
+  position: absolute;
+  left: -45.8vw;
+  top: 2130px;
+  width: 40vw;
+  max-width: 800px;
+}
+
+.image-11.space {
+  top: 2131px;
+}
+
+.image-11.nigeria {
+  left: auto;
+  right: -45vw;
+}
+
+.circle_line {
+  position: absolute;
+  left: -46vw;
+  top: 1700px;
+  z-index: 10;
+  width: 450px;
+  height: 450px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 300px;
+}
+
+.circle_line._1 {
+  left: -275px;
+  top: 2050px;
+  width: 600px;
+  height: 600px;
+}
+
+.circle_line._1.space {
+  top: 2070px;
+  overflow: scroll;
+}
+
+.circle_line._1.nigeria {
+  left: -275px;
+  top: 2789px;
+  width: 550px;
+  height: 550px;
+}
+
+.circle_line._1.juve {
+  left: -300px;
+  top: 3150px;
+  width: 600px;
+  height: 600px;
+}
+
+.circle_line._1.nike {
+  left: -300px;
+  top: 1900px;
+}
+
+.circle_line._1.adidas {
+  left: -325px;
+  top: 1970px;
+  width: 650px;
+  height: 650px;
+}
+
+.circle_line._2 {
+  left: -350px;
+  top: 3847px;
+  width: 700px;
+  height: 700px;
+  border-radius: 350px;
+}
+
+.circle_line._2.nigeria {
+  top: 3217px;
+}
+
+.circle_line._2.juve {
+  left: -300px;
+  top: 4329px;
+  width: 600px;
+  height: 600px;
+}
+
+.circle_line._2.adidas {
+  left: -300px;
+  top: 3613px;
+  width: 600px;
+  height: 600px;
+}
+
+.circle_line._3 {
+  left: -325px;
+  top: 2220px;
+  width: 650px;
+  height: 650px;
+  border-radius: 350px;
+}
+
+.circle_line._3.nigeria {
+  left: -325px;
+  top: 1950px;
+  width: 650px;
+  height: 650px;
+}
+
+.circle_line._3.juve {
+  left: -275px;
+  top: 2233px;
+  width: 550px;
+  height: 550px;
+}
+
+.circle_line._3.nike {
+  top: 2675px;
+}
+
+.circle_line._3.adidas {
+  left: -275px;
+  top: 2233px;
+  width: 550px;
+  height: 550px;
+}
+
+.circle_line._3.adidas {
+  left: -350px;
+  top: 1450px;
+  width: 700px;
+  height: 700px;
+}
+
+.circle_line._4 {
+  left: -275px;
+  top: 500px;
+  width: 550px;
+  height: 550px;
+}
+
+.circle_line._4.nike {
+  left: -325px;
+  top: 1123px;
+  width: 650px;
+  height: 650px;
+  border-radius: 350px;
+}
+
+.circle_line._5 {
+  left: -275px;
+  top: 111px;
+  z-index: auto;
+  width: 550px;
+  height: 550px;
+}
+
+.circle_line.return {
+  position: absolute;
+  left: auto;
+  top: auto;
+  z-index: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.image-12 {
+  position: absolute;
+  left: -25vw;
+  top: 3050px;
+  width: 71vw;
+  max-width: 1200px;
+}
+
+.image-12.space {
+  top: 3052px;
+}
+
+.image-12.nigeria {
+  left: auto;
+  right: -25vw;
+}
+
+.image-12.juve {
+  left: auto;
+  top: 3200px;
+  right: -43vw;
+}
+
+.image-12.nike {
+  top: 3050px;
+}
+
+.image-12.adidas {
+  left: -47vw;
+  top: 3200px;
+  right: auto;
+}
+
+.image-13 {
+  position: absolute;
+  left: -45vw;
+  top: 3800px;
+  z-index: 10;
+  width: 83vw;
+  height: auto;
+  max-width: 1400px;
+}
+
+.image-13.space {
+  top: 3712px;
+}
+
+.image-13.nigeria {
+  left: auto;
+  right: -45vw;
+}
+
+.image-13.juve {
+  left: -44vw;
+  top: 3900px;
+  right: auto;
+}
+
+.image-13.adidas {
+  left: auto;
+  top: 3900px;
+  right: -44vw;
+}
+
+.div-block-7 {
+  position: relative;
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 150vh;
+  opacity: 0.15;
+}
+
+.div-block-7.nike {
+  display: block;
+}
+
+.image-14 {
+  width: 100vw;
+  height: 75vw;
+}
+
+.image-14.nigeria {
+  width: 100vw;
+  height: 60vw;
+}
+
+.image-14.juve {
+  width: 100vw;
+  height: 70vw;
+}
+
+.image-14.nike {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.nike.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.nike.psg {
+  position: absolute;
+}
+
+.image-14.nike.chelsea {
+  position: absolute;
+}
+
+.image-14.nike.gala {
+  position: absolute;
+}
+
+.image-14.nike.inter {
+  position: absolute;
+}
+
+.image-14.nike.athleti {
+  position: absolute;
+}
+
+.image-14.nike.spurs {
+  position: absolute;
+}
+
+.image-14.nike.barca {
+  position: absolute;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: 70vw;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.adidas.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas.psg {
+  position: absolute;
+}
+
+.image-14.adidas.chelsea {
+  position: absolute;
+}
+
+.image-14.adidas.gala {
+  position: absolute;
+}
+
+.image-14.adidas.inter {
+  position: absolute;
+}
+
+.image-14.adidas.athleti {
+  position: absolute;
+}
+
+.image-14.adidas.spurs {
+  position: absolute;
+}
+
+.image-14.adidas.barca {
+  position: absolute;
+}
+
+.image-14.adidas.arsenal {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.adidas.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas.psg {
+  position: absolute;
+}
+
+.image-14.adidas.chelsea {
+  position: absolute;
+}
+
+.image-14.adidas.gala {
+  position: absolute;
+}
+
+.image-14.adidas.inter {
+  position: absolute;
+}
+
+.image-14.adidas.athleti {
+  position: absolute;
+}
+
+.image-14.adidas.spurs {
+  position: absolute;
+}
+
+.image-14.adidas.barca {
+  position: absolute;
+}
+
+.image-14.adidas.bayern {
+  position: absolute;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.adidas.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas.psg {
+  position: absolute;
+}
+
+.image-14.adidas.chelsea {
+  position: absolute;
+}
+
+.image-14.adidas.gala {
+  position: absolute;
+}
+
+.image-14.adidas.inter {
+  position: absolute;
+}
+
+.image-14.adidas.athleti {
+  position: absolute;
+}
+
+.image-14.adidas.spurs {
+  position: absolute;
+}
+
+.image-14.adidas.barca {
+  position: absolute;
+}
+
+.image-14.adidas.madrid {
+  position: absolute;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.adidas.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas.psg {
+  position: absolute;
+}
+
+.image-14.adidas.chelsea {
+  position: absolute;
+}
+
+.image-14.adidas.gala {
+  position: absolute;
+}
+
+.image-14.adidas.inter {
+  position: absolute;
+}
+
+.image-14.adidas.athleti {
+  position: absolute;
+}
+
+.image-14.adidas.spurs {
+  position: absolute;
+}
+
+.image-14.adidas.barca {
+  position: absolute;
+}
+
+.image-14.adidas.united {
+  position: absolute;
+}
+
+.image-14.adidas {
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+}
+
+.image-14.adidas.roma {
+  position: absolute;
+  opacity: 1;
+}
+
+.image-14.adidas.psg {
+  position: absolute;
+}
+
+.image-14.adidas.chelsea {
+  position: absolute;
+}
+
+.image-14.adidas.gala {
+  position: absolute;
+}
+
+.image-14.adidas.inter {
+  position: absolute;
+}
+
+.image-14.adidas.athleti {
+  position: absolute;
+}
+
+.image-14.adidas.spurs {
+  position: absolute;
+}
+
+.image-14.adidas.barca {
+  position: absolute;
+}
+
+.image-14.adidas.juve {
+  position: absolute;
+}
+
+.image-15 {
+  width: 50vw;
+  height: 75vw;
+}
+
+.image-16 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  width: 500px;
+  max-width: none;
+}
+
+.image-16.nigeria {
+  left: auto;
+  top: auto;
+  width: auto;
+  height: 575px;
+}
+
+.image-16.juve {
+  width: 450px;
+}
+
+.image-16.nike {
+  width: auto;
+  height: 600px;
+}
+
+.image-16.nike.gala {
+  height: 560px;
+  margin-top: 15px;
+}
+
+.image-16.adidas {
+  width: 450px;
+}
+
+.image-16.psg {
+  left: auto;
+  top: auto;
+  width: auto;
+  height: 600px;
+}
+
+.image-16.adidas {
+  width: auto;
+  height: 600px;
+}
+
+.image-16.adidas {
+  width: auto;
+  height: 600px;
+}
+
+.image-16.nike-copy {
+  width: auto;
+  height: 600px;
+}
+
+.image-16.adidas {
+  width: auto;
+  height: 600px;
+}
+
+.image-16.adidas {
+  width: auto;
+  height: 600px;
+}
+
+.div-block-8 {
+  position: absolute;
+  left: 50vw;
+  z-index: 0;
+  width: 1px;
+  height: 3000px;
+  background-color: #fff;
+}
+
+.div-block-8.nike {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div-block-8.nike.static {
+  top: 0px;
+  display: block;
+  height: 122.5vh;
+}
+
+.div-block-8.nike.static._2 {
+  top: auto;
+  bottom: 0px;
+  height: 22.25vh;
+}
+
+.div-block-8.adidas {
+  display: none;
+}
+
+.div-block-8.adidas.static {
+  top: 0px;
+  display: block;
+  height: 122.5vh;
+}
+
+.div-block-8.adidas.static._2 {
+  top: auto;
+  bottom: 0px;
+  height: 22.25vh;
+}
+
+.jersey-info {
+  position: absolute;
+  left: auto;
+  top: 485px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  opacity: 1;
+}
+
+.jersey-info._1 {
+  position: absolute;
+  left: -103px;
+  top: 520px;
+}
+
+.jersey-info._1.snap {
+  position: relative;
+}
+
+.jersey-info._1.nigeria {
+  left: -73px;
+  top: 170px;
+}
+
+.jersey-info._1.juve {
+  left: -23px;
+  top: 156px;
+}
+
+.jersey-info._1.nike {
+  left: -46px;
+  top: 170px;
+}
+
+.jersey-info._1.nike.paris {
+  left: -84px;
+}
+
+.jersey-info._1.nike.paris.top {
+  left: -40px;
+  top: 148px;
+}
+
+.jersey-info._1.nike.arsenal {
+  left: -10px;
+  top: 167px;
+}
+
+.jersey-info._1.nike.barca {
+  left: 0px;
+  top: 135px;
+}
+
+.jersey-info._1.nike.athleti {
+  left: -9px;
+  top: 137px;
+}
+
+.jersey-info._1.nike.roma {
+  left: 10px;
+  top: 141px;
+}
+
+.jersey-info._1.nike.chelsea {
+  left: -2px;
+  top: 131px;
+}
+
+.jersey-info._1.nike.inter {
+  left: -25px;
+  top: 124px;
+}
+
+.jersey-info._1.nike.gala {
+  left: -6px;
+  top: 124px;
+}
+
+.jersey-info._1.nike.spurs {
+  left: 0px;
+  top: 143px;
+}
+
+.jersey-info._1.nike.bayern {
+  left: -30px;
+  top: 122px;
+}
+
+.jersey-info._1.nike.bayern.top {
+  left: -91px;
+  top: 148px;
+}
+
+.jersey-info._1.nike.madrid {
+  left: 40px;
+  top: 323px;
+}
+
+.jersey-info._1.nike.united {
+  left: -7px;
+  top: 160px;
+}
+
+.jersey-info._1.nike.juve {
+  left: 50px;
+  top: 368px;
+}
+
+.jersey-info._1.adidas {
+  left: -95px;
+  top: 545px;
+}
+
+.jersey-info._1.psg {
+  left: -50px;
+  top: 172px;
+}
+
+.jersey-info._2 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._2.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._2.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._2.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._2.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._2.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._2.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._2.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._2.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._2.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._2.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._2.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._3 {
+  position: absolute;
+  left: 789px;
+  top: 750px;
+}
+
+.jersey-info._3.snap {
+  position: relative;
+  top: 500px;
+}
+
+.jersey-info._3.nigeria {
+  left: 790px;
+  top: 402px;
+}
+
+.jersey-info._3.juve {
+  left: 790px;
+  top: 400px;
+}
+
+.jersey-info._3.nike {
+  left: 846px;
+  top: 424px;
+}
+
+.jersey-info._3.nike.paris {
+  left: 880px;
+}
+
+.jersey-info._3.nike.paris.top {
+  left: 750px;
+}
+
+.jersey-info._3.nike.arsenal {
+  left: 800px;
+}
+
+.jersey-info._3.nike.barca {
+  left: 775px;
+}
+
+.jersey-info._3.nike.athleti {
+  left: 800px;
+  top: 357px;
+}
+
+.jersey-info._3.nike.chelsea {
+  left: 800px;
+}
+
+.jersey-info._3.nike.inter {
+  left: 800px;
+}
+
+.jersey-info._3.nike.spurs {
+  left: 790px;
+}
+
+.jersey-info._3.nike.bayern {
+  left: 800px;
+  top: 384px;
+}
+
+.jersey-info._3.nike.bayern.top {
+  left: 802px;
+}
+
+.jersey-info._3.nike.madrid {
+  top: 328px;
+}
+
+.jersey-info._3.nike.united {
+  left: 800px;
+  top: 348px;
+}
+
+.jersey-info._3.nike.roma {
+  left: 796px;
+  top: 336px;
+}
+
+.jersey-info._3.adidas {
+  left: 789px;
+  top: 800px;
+}
+
+.jersey-info._3.psg {
+  left: 730px;
+  top: 400px;
+}
+
+.jersey-info._4 {
+  position: absolute;
+  left: -103px;
+  top: 520px;
+}
+
+.jersey-info._4.snap {
+  position: relative;
+}
+
+.jersey-info._4.nigeria {
+  left: -130px;
+}
+
+.jersey-info._4.juve {
+  left: -74px;
+  top: 528px;
+}
+
+.jersey-info._4.nike {
+  left: -46px;
+  top: 170px;
+}
+
+.jersey-info._4.nike.paris {
+  left: -84px;
+}
+
+.jersey-info._4.nike.paris.top {
+  left: -91px;
+  top: 148px;
+}
+
+.jersey-info._4.nike.arsenal {
+  left: -57px;
+  top: 167px;
+}
+
+.jersey-info._4.nike.barca {
+  left: -50px;
+  top: 135px;
+}
+
+.jersey-info._4.nike.athleti {
+  left: -59px;
+  top: 137px;
+}
+
+.jersey-info._4.nike.roma {
+  left: -40px;
+  top: 141px;
+}
+
+.jersey-info._4.nike.chelsea {
+  left: -53px;
+  top: 131px;
+}
+
+.jersey-info._4.nike.inter {
+  left: -76px;
+  top: 124px;
+}
+
+.jersey-info._4.nike.gala {
+  left: -63px;
+  top: 120px;
+}
+
+.jersey-info._4.nike.spurs {
+  left: -51px;
+  top: 143px;
+}
+
+.jersey-info._4.nike.bayern {
+  left: -21px;
+  top: 330px;
+}
+
+.jersey-info._4.nike.bayern.top {
+  left: -91px;
+  top: 148px;
+}
+
+.jersey-info._4.adidas {
+  left: -95px;
+  top: 545px;
+}
+
+.jersey-info._4.psg {
+  top: 540px;
+}
+
+.jersey-info._2 {
+  position: absolute;
+  left: 789px;
+  top: 750px;
+}
+
+.jersey-info._2.snap {
+  position: relative;
+  top: 500px;
+}
+
+.jersey-info._2.nigeria {
+  left: 840px;
+}
+
+.jersey-info._2.juve {
+  left: 840px;
+  top: 800px;
+}
+
+.jersey-info._2.nike {
+  left: 846px;
+  top: 424px;
+}
+
+.jersey-info._2.nike.paris {
+  left: 880px;
+}
+
+.jersey-info._2.nike.paris.top {
+  left: 802px;
+}
+
+.jersey-info._2.nike.inter {
+  left: 807px;
+}
+
+.jersey-info._2.nike.bayern {
+  left: 815px;
+  top: 117px;
+}
+
+.jersey-info._2.nike.bayern.top {
+  left: 802px;
+}
+
+.jersey-info._2.adidas {
+  left: 789px;
+  top: 800px;
+}
+
+.jersey-info._2-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy.nigeria {
+  left: 887px;
+  top: 484px;
+}
+
+.jersey-info._2-copy.juve {
+  left: 850px;
+  top: 86px;
+}
+
+.jersey-info._2-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy.nike.paris.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2-copy.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2-copy.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2-copy.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2-copy.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2-copy.nike.gala {
+  left: 874px;
+  top: 253px;
+}
+
+.jersey-info._2-copy.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy.psg {
+  top: 494px;
+}
+
+.jersey-info._2-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy.nigeria {
+  left: 887px;
+  top: 484px;
+}
+
+.jersey-info._2-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy.nike.paris.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2-copy.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2-copy.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2-copy.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2-copy.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2-copy.nike.gala {
+  left: 874px;
+  top: 253px;
+}
+
+.jersey-info._2-copy.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy.nike.juve {
+  left: 926px;
+  top: 189px;
+}
+
+.jersey-info._2-copy.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._2-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._2-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy.nigeria {
+  left: 887px;
+  top: 484px;
+}
+
+.jersey-info._2-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2-copy.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2-copy.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2-copy.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2-copy.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2-copy.nike.gala {
+  left: 874px;
+  top: 326px;
+}
+
+.jersey-info._2-copy.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy.nike.juve {
+  left: 926px;
+  top: 189px;
+}
+
+.jersey-info._2-copy.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._2-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._2-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy.nigeria {
+  left: 840px;
+  top: 132px;
+}
+
+.jersey-info._2-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2-copy.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2-copy.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2-copy.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2-copy.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2-copy.nike.gala {
+  left: 874px;
+  top: 326px;
+}
+
+.jersey-info._2-copy.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy.nike.juve {
+  left: 942px;
+  top: 131px;
+}
+
+.jersey-info._2-copy.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._2-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._2 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2.nigeria {
+  left: 887px;
+  top: 484px;
+}
+
+.jersey-info._2.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2.nike.paris.top {
+  left: 856px;
+  top: 123px;
+}
+
+.jersey-info._2.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2.nike.gala {
+  left: 874px;
+  top: 253px;
+}
+
+.jersey-info._2.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2.nike.juve {
+  left: 926px;
+  top: 189px;
+}
+
+.jersey-info._2.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._2.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._2-copy-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy-copy.nigeria {
+  left: 887px;
+  top: 484px;
+}
+
+.jersey-info._2-copy-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy-copy.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._2-copy-copy.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._2-copy-copy.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._2-copy-copy.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._2-copy-copy.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._2-copy-copy.nike.inter {
+  left: 864px;
+  top: 209px;
+}
+
+.jersey-info._2-copy-copy.nike.gala {
+  left: 874px;
+  top: 326px;
+}
+
+.jersey-info._2-copy-copy.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._2-copy-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy-copy.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._2-copy-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy-copy.nike.juve {
+  left: 926px;
+  top: 189px;
+}
+
+.jersey-info._2-copy-copy.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._2-copy-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy-copy.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._2-copy {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._2-copy.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._2-copy.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._2-copy.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._2-copy.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._2-copy.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._2-copy.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._2-copy.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._2-copy.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._2-copy.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._2-copy.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._2-copy.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._2-copy.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._2-copy.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._2-copy.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._2-copy.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._2-copy.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._2-copy.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._2-copy.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._2-copy.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._4 {
+  position: absolute;
+  left: 789px;
+  top: 750px;
+}
+
+.jersey-info._4.snap {
+  position: relative;
+  top: 500px;
+}
+
+.jersey-info._4.nigeria {
+  left: 840px;
+}
+
+.jersey-info._4.juve {
+  left: 840px;
+  top: 800px;
+}
+
+.jersey-info._4.nike {
+  left: 846px;
+  top: 424px;
+}
+
+.jersey-info._4.nike.paris {
+  left: 880px;
+}
+
+.jersey-info._4.nike.paris.top {
+  left: 802px;
+}
+
+.jersey-info._4.nike.inter {
+  left: 807px;
+}
+
+.jersey-info._4.nike.bayern {
+  left: 815px;
+  top: 117px;
+}
+
+.jersey-info._4.nike.bayern.top {
+  left: 802px;
+}
+
+.jersey-info._4.adidas {
+  left: 789px;
+  top: 800px;
+}
+
+.jersey-info._5 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._5.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._5.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._5.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._5.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._5.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._5.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._5.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._5.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._5.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._5.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._5.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._5.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._5.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._5.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._5.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._5.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._5.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._5.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._5.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._5.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._8 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._8.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._8.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._8.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._8.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._8.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._8.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._8.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._8.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._8.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._8.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._8.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._8.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._8.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._8.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._8.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._8.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._8.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._8.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._8.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._8.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._11 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._11.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._11.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._11.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._11.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._11.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._11.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._11.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._11.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._11.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._11.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._11.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._11.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._11.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._11.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._11.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._11.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._11.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._11.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._11.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._11.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._13 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._13.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._13.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._13.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._13.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._13.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._13.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._13.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._13.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._13.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._13.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._13.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._13.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._13.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._13.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._13.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._13.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._13.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._13.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._13.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._13.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._12 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._12.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._12.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._12.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._12.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._12.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._12.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._12.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._12.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._12.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._12.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._12.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._12.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._12.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._12.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._12.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._12.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._12.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._12.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._12.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._12.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._10 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._10.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._10.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._10.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._10.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._10.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._10.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._10.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._10.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._10.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._10.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._10.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._10.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._10.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._10.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._10.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._10.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._10.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._10.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._10.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._10.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._9 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._9.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._9.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._9.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._9.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._9.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._9.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._9.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._9.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._9.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._9.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._9.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._9.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._9.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._9.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._9.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._9.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._9.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._9.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._9.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._9.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.jersey-info._19 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._19.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._19.nigeria {
+  left: 840px;
+  top: 132px;
+}
+
+.jersey-info._19.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._19.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._19.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._19.nike.arsenal {
+  left: 931px;
+  top: 121px;
+}
+
+.jersey-info._19.nike.barca {
+  top: 167px;
+}
+
+.jersey-info._19.nike.athleti {
+  left: 890px;
+  top: 101px;
+}
+
+.jersey-info._19.nike.chelsea {
+  left: 887px;
+  top: 106px;
+}
+
+.jersey-info._19.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._19.nike.gala {
+  left: 874px;
+  top: 326px;
+}
+
+.jersey-info._19.nike.spurs {
+  left: 860px;
+  top: 176px;
+}
+
+.jersey-info._19.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._19.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._19.nike.madrid {
+  left: 926px;
+  top: 125px;
+}
+
+.jersey-info._19.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._19.nike.juve {
+  left: 942px;
+  top: 131px;
+}
+
+.jersey-info._19.nike.roma {
+  left: 867px;
+  top: 103px;
+}
+
+.jersey-info._19.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._19.psg {
+  left: 901px;
+  top: 494px;
+}
+
+.jersey-info._15 {
+  position: absolute;
+  left: 901px;
+  top: 500px;
+}
+
+.jersey-info._15.snap {
+  position: relative;
+  left: 50vw;
+  top: 300px;
+}
+
+.jersey-info._15.nigeria {
+  left: 887px;
+  top: 126px;
+}
+
+.jersey-info._15.nike {
+  left: 857px;
+  top: 110px;
+}
+
+.jersey-info._15.nike.paris {
+  left: 896px;
+  top: 503px;
+}
+
+.jersey-info._15.nike.paris.top {
+  left: 921px;
+  top: 123px;
+}
+
+.jersey-info._15.nike.arsenal {
+  left: 880px;
+  top: 121px;
+}
+
+.jersey-info._15.nike.barca {
+  left: 800px;
+  top: 167px;
+}
+
+.jersey-info._15.nike.athleti {
+  left: 840px;
+  top: 101px;
+}
+
+.jersey-info._15.nike.chelsea {
+  left: 830px;
+  top: 106px;
+}
+
+.jersey-info._15.nike.inter {
+  left: 918px;
+  top: 209px;
+}
+
+.jersey-info._15.nike.gala {
+  left: 820px;
+  top: 326px;
+}
+
+.jersey-info._15.nike.spurs {
+  left: 818px;
+  top: 176px;
+}
+
+.jersey-info._15.nike.bayern {
+  left: 819px;
+  top: 336px;
+}
+
+.jersey-info._15.nike.bayern.top {
+  top: 123px;
+}
+
+.jersey-info._15.nike.madrid {
+  left: 873px;
+  top: 125px;
+}
+
+.jersey-info._15.nike.united {
+  left: 940px;
+  top: 120px;
+}
+
+.jersey-info._15.nike.juve {
+  left: 893px;
+  top: 131px;
+}
+
+.jersey-info._15.nike.roma {
+  left: 807px;
+  top: 103px;
+}
+
+.jersey-info._15.adidas {
+  left: 870px;
+  top: 514px;
+}
+
+.jersey-info._15.psg {
+  left: 850px;
+  top: 130px;
+}
+
+.subhead {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 17.5px;
+  font-size: 65px;
+}
+
+.jerseytext {
+  position: relative;
+  width: 20vw;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.jerseyline {
+  position: absolute;
+  height: 1px;
+  background-color: #fff;
+}
+
+.jerseyline._2 {
+  left: -270px;
+  width: 400px;
+}
+
+.jerseyline._1 {
+  width: 400px;
+  -webkit-transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+  transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.jerseyline._3 {
+  left: -270px;
+  width: 400px;
+}
+
+.bighead {
+  position: absolute;
+  left: -34.9vw;
+  z-index: 10;
+  width: 800px;
+  height: 100px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #fff;
+  font-size: 300px;
+}
+
+.bighead._1 {
+  left: -25vw;
+  top: 230px;
+  width: 800px;
+  height: 100px;
+}
+
+.bighead._2 {
+  left: -45vw;
+  width: 700px;
+  height: 100px;
+}
+
+.bighead._3 {
+  left: -47.7vw;
+  top: 115px;
+  width: 800px;
+  height: 100px;
+}
+
+.bighead._3.adidas {
+  left: -48vw;
+}
+
+.bighead._4 {
+  left: -25.8vw;
+  top: 354px;
+}
+
+.bighead._4.adidas {
+  left: -34vw;
+  top: 365px;
+}
+
+.image-17 {
+  position: absolute;
+  left: -47vw;
+  top: 464px;
+  width: 61vw;
+  max-width: 1000px;
+}
+
+.image_abs {
+  position: absolute;
+  left: -22.6vw;
+  top: 0px;
+  width: 1100px;
+  max-width: none;
+}
+
+.image_abs._1 {
+  top: 1125px;
+  z-index: 3;
+  width: 68vw;
+  max-width: 1100px;
+}
+
+.image_abs._1.nigeria {
+  left: -31.1vw;
+  width: 75vw;
+  max-width: 1200px;
+}
+
+.image_abs._1.juve {
+  left: auto;
+  top: 1485px;
+  right: -31vw;
+  width: 75vw;
+  max-width: 1200px;
+}
+
+.image_abs._1.adidas {
+  left: auto;
+  top: 1250px;
+  right: -32vw;
+  width: 75vw;
+  max-width: 1200px;
+}
+
+.image_abs._2 {
+  left: -40vw;
+  top: 2007px;
+  z-index: 5;
+  width: 37vw;
+  max-width: 600px;
+}
+
+.image_abs._2.nigeria {
+  left: -45vw;
+}
+
+.image_abs._3 {
+  left: -18.2vw;
+  top: 2993px;
+  width: 68vw;
+  max-width: 1100px;
+}
+
+.image_abs._3.nigeria {
+  left: -22vw;
+}
+
+.image_abs._3.juve {
+  left: auto;
+  top: 3370px;
+  right: -45vw;
+}
+
+.image_abs._3.nike {
+  top: 3025px;
+}
+
+.image_abs._3.adidas {
+  left: auto;
+  top: 3450px;
+  right: -45vw;
+}
+
+.image_abs._4 {
+  left: -47vw;
+  top: 3929px;
+  width: 83vw;
+  max-width: 1400px;
+}
+
+.image_abs._4.nigeria {
+  top: 4055px;
+  width: 80vw;
+  max-width: 1300px;
+}
+
+.image_abs._4.juve {
+  top: 4350px;
+  width: 85vw;
+  max-width: 1400px;
+}
+
+.image_abs._4.adidas {
+  top: 4300px;
+  width: 85vw;
+  max-width: 1400px;
+}
+
+.image_abs._5 {
+  left: -30.6vw;
+  top: 600px;
+  z-index: 10;
+  width: 77vw;
+  max-width: 1250px;
+}
+
+.image_abs._5.adidas {
+  left: -34vw;
+  top: 600px;
+}
+
+.image_abs._6 {
+  left: -0.3vw;
+  top: 1389px;
+  width: 43vw;
+  max-width: 700px;
+}
+
+.image_abs._7 {
+  left: -43.6vw;
+  top: 2217px;
+  width: 80vw;
+  max-width: 1300px;
+}
+
+.image_abs._7.nigeria {
+  top: 2140px;
+}
+
+.image_abs._7.juve {
+  left: -43vw;
+  top: 1999px;
+  width: 45vw;
+  max-width: 1000px;
+}
+
+.image_abs._7.nike {
+  top: 2150px;
+  width: 75vw;
+}
+
+.image_abs._7.adidas {
+  left: -43vw;
+  top: 1999px;
+  width: 45vw;
+  max-width: 1000px;
+}
+
+.image_abs._7.adidas {
+  top: 2140px;
+}
+
+.image_abs._7.adidas {
+  top: 2350px;
+  width: 80vw;
+  max-width: 1300px;
+}
+
+.image_abs._8 {
+  left: -47vw;
+  top: 3789px;
+  z-index: 1;
+  width: 46vw;
+  max-width: 750px;
+}
+
+.image_abs._8.nigeria {
+  top: 3990px;
+}
+
+.image_abs._9 {
+  left: -18vw;
+  top: 3466px;
+  width: 68vw;
+  max-width: 1100px;
+}
+
+.image_abs._9.nigeria {
+  top: 3576px;
+}
+
+.image_abs._9.juve {
+  left: auto;
+  top: 3810px;
+  right: -40vw;
+  width: 55vw;
+  max-width: 1000px;
+}
+
+.image_abs._9.nike {
+  top: 3800px;
+  width: 65vw;
+}
+
+.image_abs._9.adidas {
+  left: auto;
+  top: 3810px;
+  right: -40vw;
+  width: 55vw;
+  max-width: 1000px;
+}
+
+.image_abs._9.adidas {
+  top: 3710px;
+  right: -46vw;
+  width: 68vw;
+  max-width: 1100px;
+}
+
+.image_abs._10 {
+  left: -40vw;
+  top: 4896px;
+  z-index: 10;
+  width: 86vw;
+  max-width: 1400px;
+  opacity: 1;
+}
+
+.image_abs._10.juve {
+  top: 5109px;
+}
+
+.image_abs._10.nike {
+  top: 5775px;
+}
+
+.image_abs._10.adidas {
+  top: 5100px;
+}
+
+.image_abs._11 {
+  left: -40vw;
+  top: 4896px;
+  z-index: 10;
+  width: 86vw;
+  max-width: 1400px;
+  opacity: 1;
+}
+
+.image_abs._11.juve {
+  top: 5109px;
+}
+
+.image_abs._11.nike {
+  left: auto;
+  top: 5280px;
+  right: -37vw;
+  width: 35vw;
+  max-width: 1000px;
+}
+
+.jersey-section-1 {
+  position: relative;
+  left: auto;
+  top: 50vh;
+  right: auto;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  max-width: 1200px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jersey-section-1.nike {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.nike.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.nike.psg {
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.nike.original {
+  opacity: 1;
+}
+
+.jersey-section-1.nike.barca {
+  display: none;
+}
+
+.jersey-section-1.nike.athleti {
+  display: none;
+}
+
+.jersey-section-1.nike.chelsea {
+  display: none;
+}
+
+.jersey-section-1.nike.inter {
+  display: none;
+}
+
+.jersey-section-1.nike.gala {
+  display: none;
+}
+
+.jersey-section-1.nike.spurs {
+  display: none;
+}
+
+.jersey-section-1.original.nike {
+  top: auto;
+  display: none;
+}
+
+.jersey-section-1.adidas {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.psg {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.original {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.arsenal {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.psg {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.original {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.bayern {
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.psg {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.original {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.madrid {
+  display: none;
+}
+
+.jersey-section-1.adidas {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.psg {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.original {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.united {
+  display: none;
+}
+
+.jersey-section-1.adidas {
+  top: 40vh;
+  display: none;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.roma {
+  top: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.psg {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.original {
+  opacity: 1;
+}
+
+.jersey-section-1.adidas.juve {
+  display: none;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 4000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #1b1d1e;
+}
+
+.body-2 {
+  background-color: #1b1d1e;
+}
+
+.gallery-scroll-track {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.gallery-container {
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.gallery-track {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300vw;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.gallery-image {
+  height: 70vh;
+  max-width: none;
+  margin: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.gallery-image._1 {
+  background-image: url('../images/2style6.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home_scroll {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 430vh;
+  margin-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.sticky_div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(27, 29, 30, 0);
+}
+
+.home_icon {
+  position: absolute;
+}
+
+.home_menu {
+  position: absolute;
+  left: 37.5vw;
+  top: 37.5vh;
+  right: 0px;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  margin-top: 0vh;
+  margin-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home_menu.static {
+  left: 2vw;
+  top: 2vh;
+  width: 10vw;
+  height: 10vw;
+}
+
+.home_menu.static.right {
+  left: auto;
+  top: 5vh;
+  right: 30px;
+  width: 5vw;
+  height: 3vw;
+  margin-top: 0vh;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: freight-big-pro, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home_menu.static.right.pages {
+  opacity: 0.6;
+}
+
+.home_menu.static.right.pages:hover {
+  opacity: 1;
+}
+
+.home_menu.static.right.pages.w--current {
+  opacity: 1;
+}
+
+.main_logo {
+  position: absolute;
+  z-index: 20;
+  width: 10vw;
+  height: 10vw;
+}
+
+.main_logo.inside {
+  width: 25vw;
+  height: 25vw;
+}
+
+.main_logo.inside.static {
+  width: 10vw;
+  height: 10vw;
+}
+
+.main_logo.outside {
+  width: 25vw;
+  height: 25vw;
+}
+
+.main_logo.outside.static {
+  width: 10vw;
+  height: 10vw;
+}
+
+.overflow-hidden-mask {
+  position: relative;
+  z-index: 200;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 29, 30, 0);
+}
+
+.scrollable-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 430vh;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main_content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 430vh;
+  height: 100%;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.case_box {
+  position: relative;
+  top: -21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  width: 600px;
+  height: 70vh;
+  margin-right: 50px;
+  margin-left: 50px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-color: rgba(82, 82, 82, 0);
+}
+
+.case_box._5 {
+  background-color: #b1b1b1;
+}
+
+.case_box.nigera {
+  margin-left: 200px;
+}
+
+.case_box.juve {
+  margin-left: 100px;
+}
+
+.case_box.nike {
+  margin-left: 200px;
+}
+
+.case_box.adidas {
+  margin-left: 200px;
+}
+
+.case_box.nigeria {
+  margin-left: 275px;
+}
+
+.case_box.jordan {
+  margin-left: 75px;
+}
+
+.case_box.nike {
+  margin-left: 350px;
+}
+
+.case_box.adidas {
+  position: relative;
+  top: -18px;
+  margin-left: 200px;
+}
+
+.section-3 {
+  position: absolute;
+  height: 500px;
+}
+
+.image-19 {
+  position: relative;
+}
+
+.main_image {
+  position: relative;
+  display: block;
+  height: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.main_image._1 {
+  position: absolute;
+  left: -19px;
+  top: 48px;
+  height: 50vh;
+  max-width: none;
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
+
+.main_image._1.nigeria {
+  left: -34px;
+  top: 159px;
+  height: 45vh;
+}
+
+.main_image._1.juve {
+  top: 66px;
+  height: 43vh;
+}
+
+.main_image._1.nike {
+  left: -50px;
+  top: 272px;
+  height: 32vh;
+}
+
+.main_image._1.adidas {
+  left: -5px;
+  top: 291px;
+  height: 33vh;
+}
+
+.main_image._2 {
+  position: absolute;
+  left: 168px;
+  top: -33px;
+  height: 40vh;
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
+
+.main_image._2.nigeria {
+  left: 151px;
+  top: 224px;
+  height: 30vh;
+}
+
+.main_image._2.juve {
+  left: 173px;
+  top: -24px;
+}
+
+.main_image._2.nike {
+  left: 337px;
+  top: 56px;
+  height: 50vh;
+}
+
+.main_image._2.adidas {
+  left: 427px;
+  top: 99px;
+  height: 45vh;
+}
+
+.main_image._3 {
+  position: absolute;
+  left: 134px;
+  top: 239px;
+  height: 32vh;
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
+
+.main_image._3.nigeria {
+  left: 112px;
+  top: -5px;
+  height: 30vh;
+}
+
+.main_image._3.juve {
+  left: 113px;
+  top: 242px;
+  height: 30vh;
+}
+
+.main_image._3.nike {
+  left: 154px;
+  top: -25px;
+  height: 42vh;
+}
+
+.main_image._3.adidas {
+  left: 139px;
+  top: -72px;
+  height: 50vh;
+}
+
+.horizontalline {
+  position: absolute;
+  left: 0px;
+  top: 54vh;
+  width: 550vh;
+  height: 1px;
+  background-color: #fff;
+}
+
+.div-block-9 {
+  position: fixed;
+}
+
+.div-block-10 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1d1e;
+  opacity: 0;
+}
+
+.div-block-11 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1b1d1e;
+}
+
+.body-3 {
+  overflow: visible;
+  max-width: 100%;
+  background-color: #1b1d1e;
+}
+
+.section-4 {
+  position: relative;
+  top: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.about {
+  position: relative;
+  left: 7.5vw;
+  top: 50px;
+  z-index: 10;
+  line-height: 35px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-indent: 50px;
+  white-space: normal;
+}
+
+.about._1 {
+  width: 57vw;
+  font-weight: 200;
+  text-indent: 0px;
+  cursor: default;
+}
+
+.about._2 {
+  width: 57vw;
+  font-weight: 200;
+  cursor: default;
+}
+
+.about.credits {
+  left: 7.5vw;
+  top: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85vw;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 17px;
+  line-height: 23px;
+  text-indent: 0px;
+  -webkit-column-count: auto;
+  column-count: auto;
+}
+
+.div-block-12 {
+  position: absolute;
+  left: auto;
+  top: 140px;
+  right: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_image {
+  position: absolute;
+  height: 80vh;
+  max-width: none;
+  opacity: 0;
+}
+
+.about_image._1 {
+  position: absolute;
+  height: 80vh;
+  opacity: 0;
+}
+
+.about_image._2 {
+  position: absolute;
+  max-width: none;
+  opacity: 0;
+}
+
+.about_image._3 {
+  opacity: 0;
+}
+
+.about_image._4 {
+  opacity: 0;
+}
+
+.about_image.nigeria {
+  left: auto;
+}
+
+.section-5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.text-block {
+  position: absolute;
+}
+
+.hovertextimage {
+  background-color: #4e4e4e;
+  cursor: default;
+}
+
+.text-span {
+  font-family: freight-big-pro, sans-serif;
+  font-size: 34px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.jersey-section-2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jersey-section-3 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scroll-snap-wrapper-extra {
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+.html-embed {
+  display: none;
+}
+
+.jersey-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 3000px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jersey-1 {
+  height: 100vh;
+  background-color: #493636;
+}
+
+.scroll-snap-wrapper {
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+.jersey-2 {
+  height: 100vh;
+  background-color: #414d2d;
+}
+
+.jersey-3 {
+  height: 100vh;
+  background-color: #3d5669;
+}
+
+.html-embed-2 {
+  display: none;
+}
+
+.div-block-13 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-21 {
+  height: 100vh;
+  background-color: #25aa73;
+}
+
+.section-20 {
+  height: 100vh;
+  background-color: #771212;
+}
+
+.section-22 {
+  height: 100vh;
+  background-color: #8329b3;
+}
+
+.html-embed-3 {
+  display: none;
+}
+
+.arrow-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75px;
+  height: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.arrow-nav.right {
+  position: absolute;
+}
+
+.arrow-nav.right.w--current {
+  left: 120px;
+}
+
+.arrow-nav.right.psg {
+  right: 10vw;
+}
+
+.arrow-nav.left {
+  position: absolute;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.arrow-nav.left.psg {
+  left: 10vw;
+}
+
+.arrow-nav.psg {
+  position: relative;
+  top: 10px;
+}
+
+.arrow-nav.psg.left {
+  left: -35vw;
+}
+
+.arrow-nav.psg.right {
+  left: auto;
+  right: -35vw;
+}
+
+.arrow-line {
+  position: absolute;
+  right: auto;
+  width: 75px;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.arrow-circle {
+  position: absolute;
+  left: 252px;
+  top: 13px;
+  width: 25px;
+  height: 1px;
+  border-top: 1px none #e4e4e4;
+  border-right: 1px none #e4e4e4;
+  border-left: 1px none #000;
+  border-radius: 0px;
+  background-color: #e4e4e4;
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.arrow-circle.bottom {
+  left: auto;
+  right: -2px;
+}
+
+.arrow-circle.top {
+  left: auto;
+  top: -3px;
+  right: -3px;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.arrow-point {
+  position: absolute;
+  left: 172px;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrow-point.right {
+  left: auto;
+  right: 2px;
+}
+
+.arrow-point.left {
+  left: 2px;
+  right: auto;
+  border-style: none none solid solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e4e4e4;
+  border-left-width: 1px;
+  border-left-color: #e4e4e4;
+}
+
+.image-20 {
+  max-width: none;
+}
+
+.section-23 {
+  width: 100vw;
+  height: 100vh;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #e4e4e4;
+  background-color: #a73e3e;
+}
+
+.html-embed-4 {
+  display: none;
+}
+
+.html-embed-5 {
+  display: none;
+}
+
+.html-embed-6 {
+  display: none;
+}
+
+.footer-home {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-home.old {
+  display: none;
+}
+
+.return-home {
+  position: relative;
+  top: -50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.return-home.psg {
+  top: auto;
+}
+
+.return-home.juve {
+  top: auto;
+}
+
+.home-button-text {
+  position: absolute;
+  font-family: freight-big-pro, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 33px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.div-block-14 {
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  background-color: #1b1d1e;
+}
+
+.arrow-cover {
+  position: absolute;
+  left: -2px;
+  width: 80px;
+  height: 30px;
+  background-color: #1b1d1e;
+}
+
+.arrow-cover.right {
+  left: auto;
+  right: -2px;
+}
+
+.red-hover {
+  position: absolute;
+  left: -350px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ac0019;
+  border-radius: 100px;
+  background-color: #ac0019;
+}
+
+.red-hover._1 {
+  left: -300px;
+}
+
+.red-hover._1.bayern {
+  border-color: #1ad1e5;
+  background-color: #1ad1e5;
+}
+
+.red-hover._2 {
+  left: 400px;
+}
+
+.red-hover._2.bayern {
+  border-color: #1ad1e5;
+  background-color: #1ad1e5;
+}
+
+.red-hover._3 {
+  left: -300px;
+}
+
+.red-hover._3.bayern {
+  border-color: #1ad1e5;
+  background-color: #1ad1e5;
+}
+
+.red-hover.float {
+  position: relative;
+  left: 60%;
+  top: 12.7vh;
+}
+
+.red-hover._4 {
+  left: 450px;
+}
+
+.red-hover._4.bayern {
+  border-color: #1ad1e5;
+  background-color: #1ad1e5;
+}
+
+.div-block-15 {
+  position: relative;
+}
+
+.paragraph-3 {
+  width: 24vw;
+  background-color: transparent;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #1b1d1e;
+}
+
+.about-image {
+  position: absolute;
+  left: 162px;
+  height: 80vh;
+  max-width: none;
+}
+
+.about-image._1 {
+  left: auto;
+  height: 78vh;
+}
+
+.images.about {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 5vw;
+  z-index: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 80vh;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.intro-back {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.intro-logo {
+  position: absolute;
+  top: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+
+.image-21 {
+  width: 200px;
+  height: 200px;
+}
+
+.image-22 {
+  width: 200px;
+  height: 200px;
+}
+
+.logo-box {
+  position: absolute;
+  top: 15vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.logo-box.intro {
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+}
+
+.intro-text {
+  position: relative;
+  left: auto;
+  top: 30px;
+  z-index: 10;
+  width: 50vw;
+  background-color: transparent;
+  color: #fff;
+  line-height: 35px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: normal;
+  text-indent: 0px;
+  white-space: normal;
+}
+
+.intro-text._1 {
+  width: 60vw;
+  cursor: default;
+}
+
+.intro-text._2 {
+  width: 60vw;
+  cursor: default;
+}
+
+.intro-text.credits {
+  top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 17px;
+  line-height: 23px;
+  text-indent: 0px;
+  -webkit-column-count: auto;
+  column-count: auto;
+}
+
+.div-block-16 {
+  position: absolute;
+}
+
+.enter-button {
+  position: relative;
+  top: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 125px;
+  height: 125px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.enter-circle {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  border-radius: 200px;
+  background-color: hsla(0, 0%, 89.3%, 0);
+}
+
+.enter-button-text {
+  position: absolute;
+  background-color: transparent;
+  font-family: freight-big-pro, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 33px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.text-block-2 {
+  position: absolute;
+  left: 45vw;
+  top: 229px;
+  width: 100px;
+  text-align: center;
+}
+
+.text-block-3 {
+  position: absolute;
+  left: auto;
+  top: 60px;
+  right: auto;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(32, 31, 30, 0.81);
+  font-family: input-mono-condensed, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.text-block-3.nigeria {
+  top: 45vh;
+  background-color: rgba(38, 38, 38, 0.81);
+}
+
+.text-block-3.juve {
+  top: 40vh;
+  background-color: #38393a;
+}
+
+.text-block-3.nike {
+  top: 35vh;
+  background-color: #1c2128;
+}
+
+.text-block-3.adidas {
+  background-color: #32373b;
+}
+
+.text-block-3.trial {
+  background-color: #1c2128;
+}
+
+.intro-background {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #1b1d1e;
+  opacity: 1;
+}
+
+.div-block-17 {
+  position: absolute;
+  left: 40vw;
+  top: 190px;
+  width: 70px;
+  height: 30px;
+  background-color: #333636;
+}
+
+.jersey-box {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  max-width: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jersey-box.nike {
+  top: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.return-outer {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  max-width: none;
+}
+
+.return-inner {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  max-width: none;
+}
+
+.next-page {
+  position: relative;
+  left: 35vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 125px;
+  height: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.next-page.nike {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+}
+
+.next-page.nigeria {
+  width: auto;
+  height: 100px;
+}
+
+.next-image {
+  opacity: 0.5;
+}
+
+.next-image:hover {
+  opacity: 1;
+}
+
+.next-image.nigeria {
+  height: 100px;
+}
+
+.next-image.juve {
+  width: 125px;
+  height: auto;
+}
+
+.next-image.nike {
+  width: 100px;
+}
+
+.next-image.adidas {
+  display: none;
+  width: 125px;
+  height: auto;
+}
+
+.previous-page {
+  position: relative;
+  left: auto;
+  right: 35vw;
+  width: 100px;
+  height: 100px;
+}
+
+.previous-page.nike {
+  width: auto;
+}
+
+.previous-page.adidas {
+  width: 125px;
+  height: auto;
+}
+
+.previous-image {
+  display: none;
+  opacity: 0.5;
+}
+
+.previous-image:hover {
+  opacity: 1;
+}
+
+.previous-image.juve {
+  display: block;
+}
+
+.previous-image.nike {
+  display: block;
+  width: auto;
+  height: 100px;
+}
+
+.previous-image.adidas {
+  display: block;
+  width: 125px;
+  height: auto;
+}
+
+.previous-image.nigeria {
+  display: block;
+}
+
+.hover.image-11.juve {
+  left: auto;
+  top: 2200px;
+  right: -40vw;
+}
+
+.hover.image-11.nike {
+  left: auto;
+  right: -41vw;
+}
+
+.hover.image-11.adidas {
+  left: auto;
+  top: 2150px;
+  right: -42vw;
+  width: 43vw;
+}
+
+.hover.image-8.juve {
+  left: -45vw;
+  top: 150px;
+  right: auto;
+  bottom: auto;
+  width: 40vw;
+}
+
+.hover.image-8.nike {
+  left: 3vw;
+  z-index: 9;
+  width: 44vw;
+}
+
+.hover.image-8.adidas {
+  left: -47vw;
+  top: 150px;
+  right: auto;
+  bottom: auto;
+  width: 45vw;
+}
+
+.hover.image-17.juve {
+  left: -5vw;
+  top: 407px;
+  right: auto;
+  width: 50vw;
+}
+
+.hover.image-17.adidas {
+  left: auto;
+  top: 465px;
+  right: -47vw;
+  width: 65vw;
+}
+
+.hover.image_abs._2.juve {
+  left: -47vw;
+  top: 2315px;
+  width: 55vw;
+  max-width: 700px;
+}
+
+.hover.image_abs._2.adidas {
+  left: -47vw;
+  top: 2315px;
+  width: 52vw;
+  max-width: 700px;
+}
+
+.hover.image_abs._6.juve {
+  left: auto;
+  right: -47vw;
+  width: 50vw;
+  max-width: 800px;
+}
+
+.hover.image_abs._6.nike {
+  top: 1300px;
+}
+
+.hover.image_abs._6.adidas {
+  left: auto;
+  right: -47vw;
+  width: 50vw;
+  max-width: 800px;
+}
+
+.hover.image_abs._6.adidas {
+  top: 1440px;
+  right: -45vw;
+  width: 45vw;
+}
+
+.hover.image_abs._8.juve {
+  top: 4115px;
+  width: 40vw;
+}
+
+.hover.image_abs._8.nike {
+  top: 4100px;
+}
+
+.hover.image_abs._8.adidas {
+  top: 4115px;
+  width: 40vw;
+}
+
+.hover.image_abs._8.adidas {
+  left: -43vw;
+  top: 4125px;
+}
+
+.jersey-panel {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: 25vh;
+  z-index: 21;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jersey-panel.adidas {
+  bottom: 22vh;
+}
+
+.jersey-button {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/Roma.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.jersey-button:hover {
+  opacity: 1;
+}
+
+.jersey-button.roma:hover {
+  opacity: 1;
+}
+
+.jersey-button.psg {
+  background-image: url('../images/psg.png');
+}
+
+.jersey-button.chelsea {
+  background-image: url('../images/chelsea.png');
+}
+
+.jersey-button.gala {
+  background-image: url('../images/galatasaray.png');
+}
+
+.jersey-button.inter {
+  background-image: url('../images/inter.png');
+}
+
+.jersey-button.athleti {
+  background-image: url('../images/athleti.png');
+}
+
+.jersey-button.barca {
+  background-image: url('../images/Barca.png');
+}
+
+.jersey-button.spurs {
+  background-image: url('../images/spurs.png');
+}
+
+.jersey-button.adidas.arsenal {
+  background-image: url('../images/arsenal4.png');
+}
+
+.jersey-button.adidas.bayern {
+  background-image: url('../images/bayern4.png');
+}
+
+.jersey-button.adidas.madrid {
+  border-radius: 25px;
+  background-color: rgba(27, 29, 30, 0);
+  background-image: url('../images/madrid4.png');
+}
+
+.jersey-button.adidas.united {
+  background-image: url('../images/united4.png');
+}
+
+.jersey-button.adidas.juve {
+  background-image: url('../images/Juve_logo.png');
+}
+
+.jersey-panel-test {
+  position: absolute;
+  top: 975px;
+  z-index: 21;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 50px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-3 {
+  width: 24vw;
+}
+
+.heading-4 {
+  width: 24vw;
+}
+
+.heading-5 {
+  width: 24vw;
+}
+
+.section-24 {
+  width: 0px;
+  height: 0px;
+}
+
+.div-block-19 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #1b1d1e;
+}
+
+.mainpage-logo {
+  position: absolute;
+  z-index: 10;
+  width: 20vh;
+  height: 20vh;
+  background-image: url('../images/Logo_1.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainpage-logo.psg {
+  left: 195px;
+  top: 125px;
+}
+
+.mainpage-logo.nigeria {
+  left: 469px;
+  top: 131px;
+  width: 18vh;
+  height: 18vh;
+  background-image: url('../images/Logo-white.png');
+}
+
+.mainpage-logo.juve {
+  left: 106px;
+  top: 374px;
+  width: 12vh;
+  background-image: url('../images/Juve_logo.png');
+}
+
+.mainpage-logo.nike {
+  left: 319px;
+  top: 20px;
+  height: 10.2vh;
+  background-image: url('../images/nike-futura-white.png');
+}
+
+.mainpage-logo.adidas {
+  left: 422px;
+  top: 390.562px;
+  width: 17vh;
+  height: 16.3vh;
+  background-image: url('../images/Adidas_logo.png');
+}
+
+.cursor-wrapper {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 100;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inner-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #d4304e;
+}
+
+.outer-circle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d4304e;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo.psg.w--current {
+    opacity: 1;
+  }
+
+  .heading.main {
+    font-size: 85px;
+  }
+
+  .heading.main.juve {
+    width: 400px;
+    font-size: 89px;
+  }
+
+  .heading-2.main {
+    font-size: 80px;
+  }
+
+  .heading3.main {
+    font-size: 95px;
+  }
+
+  .heading3.main.nigeria {
+    font-size: 100px;
+    line-height: 93px;
+  }
+
+  .heading3.main.juve {
+    font-size: 105px;
+  }
+
+  .heading3.nigeria {
+    position: absolute;
+    font-size: 115px;
+    line-height: 105px;
+  }
+
+  .heading3.nike {
+    text-align: left;
+  }
+
+  .heading3.adidas {
+    width: 500px;
+  }
+
+  .paragraph._2.nigeria {
+    top: 2125px;
+  }
+
+  .paragraph._2.adidas {
+    top: 2125px;
+  }
+
+  .paragraph.thin._1.nigeria {
+    top: 706px;
+  }
+
+  .paragraph.thin._2.nigeria {
+    left: 10vw;
+    width: 35vw;
+    max-width: 700px;
+  }
+
+  .paragraph.thin._2.juve {
+    left: 10vw;
+    width: 35vw;
+    max-width: 700px;
+  }
+
+  .circlenav.main-menu {
+    background-color: #fff;
+  }
+
+  .circlenav.main-menu.w--current {
+    background-color: #fff;
+  }
+
+  .outer._1.juve {
+    width: 100%;
+  }
+
+  .outer._1.adidas {
+    width: 100%;
+  }
+
+  .div-block-5 {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .div-block-5.main {
+    opacity: 1;
+  }
+
+  .div-block-5.main.juve {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .div-block-5.adidas {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .image-9.nigeria {
+    width: 75vw;
+    max-width: 1300px;
+  }
+
+  .image-9.juve {
+    width: 75vw;
+    max-width: 1300px;
+  }
+
+  .circle_line._1.nigeria {
+    width: 550px;
+    height: 550px;
+    border-radius: 400px;
+  }
+
+  .circle_line._1.juve {
+    width: 550px;
+    height: 550px;
+    border-radius: 400px;
+  }
+
+  .circle_line._1.adidas {
+    width: 550px;
+    height: 550px;
+    border-radius: 400px;
+  }
+
+  .image-12.nigeria {
+    left: auto;
+  }
+
+  .image-12.juve {
+    left: auto;
+  }
+
+  .image-14.nigeria {
+    width: 100vw;
+    height: 58vw;
+  }
+
+  .image-14.juve {
+    width: 100vw;
+  }
+
+  .image-14.nike.roma {
+    opacity: 1;
+  }
+
+  .image-14.adidas {
+    width: 100vw;
+  }
+
+  .image-14.adidas.roma {
+    opacity: 1;
+  }
+
+  .image-14.adidas.arsenal {
+    opacity: 1;
+  }
+
+  .image-14.adidas.roma {
+    opacity: 1;
+  }
+
+  .image-14.adidas.roma {
+    opacity: 1;
+  }
+
+  .image-14.adidas.roma {
+    opacity: 1;
+  }
+
+  .image-14.adidas.roma {
+    opacity: 1;
+  }
+
+  .image-16.nigeria {
+    left: auto;
+    width: 450px;
+  }
+
+  .jersey-info._3.juve {
+    left: 840px;
+  }
+
+  .jersey-info._3.adidas {
+    left: 840px;
+  }
+
+  .jersey-info._2.juve {
+    left: 840px;
+  }
+
+  .jersey-info._2.adidas {
+    left: 840px;
+  }
+
+  .jersey-info._4.juve {
+    left: 840px;
+  }
+
+  .jersey-info._4.adidas {
+    left: 840px;
+  }
+
+  .image_abs._2.nigeria {
+    width: 50vw;
+    max-width: 900px;
+  }
+
+  .image_abs._7.juve {
+    left: -45vw;
+  }
+
+  .image_abs._7.adidas {
+    left: -45vw;
+  }
+
+  .image_abs._9 {
+    left: -20vw;
+  }
+
+  .jersey-section-1.nike {
+    top: 43vh;
+  }
+
+  .jersey-section-1.nike.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.original.nike {
+    display: none;
+  }
+
+  .jersey-section-1.adidas {
+    top: 43vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.adidas.arsenal {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.adidas {
+    top: 43vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.adidas {
+    top: 43vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.adidas {
+    top: 43vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .jersey-section-1.adidas {
+    top: 43vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 43vh;
+    opacity: 1;
+  }
+
+  .home_menu.static.right {
+    right: 30px;
+    opacity: 0.6;
+  }
+
+  .home_menu.static.right:hover {
+    opacity: 1;
+  }
+
+  .case_box.nigeria {
+    margin-left: 300px;
+  }
+
+  .about._1 {
+    width: 57vw;
+    font-weight: 200;
+  }
+
+  .about._2 {
+    width: 57vw;
+    font-weight: 200;
+  }
+
+  .next-image.nigeria {
+    width: auto;
+    height: 100px;
+  }
+
+  .previous-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .previous-image.juve {
+    display: block;
+  }
+
+  .jersey-panel.adidas {
+    bottom: 22vh;
+    width: 38vw;
+    height: 54px;
+  }
+
+  .jersey-button.adidas {
+    background-image: url('../images/arsenal4.png');
+  }
+
+  .jersey-button.adidas.bayern {
+    background-image: url('../images/bayern4.png');
+  }
+
+  .jersey-button.adidas.madrid {
+    background-image: url('../images/madrid4.png');
+  }
+
+  .jersey-button.adidas.united {
+    background-image: url('../images/united4.png');
+  }
+
+  .jersey-button.adidas.juve {
+    background-image: url('../images/Juve_logo.png');
+  }
+
+  .div-block-18 {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 30px;
+  }
+
+  .mainpage-logo.juve {
+    left: 73px;
+    top: 374px;
+    width: 12vh;
+    background-image: url('../images/Juve_logo.png');
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .heading.main {
+    font-size: 6.25em;
+  }
+
+  .heading-2.main {
+    font-size: 5.8em;
+  }
+
+  .heading3.main {
+    font-size: 7em;
+  }
+
+  .div-block-5.main {
+    left: 273px;
+    top: 391px;
+  }
+
+  .div-block-5.main.juve {
+    left: 491px;
+    top: 349px;
+  }
+
+  .image-12.nigeria {
+    top: 3150px;
+  }
+
+  .jersey-section-1 {
+    max-width: none;
+  }
+
+  .jersey-section-1.nike.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.nike.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.nike.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.nike.athleti {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.nike.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.nike.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.nike.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.nike.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.athleti {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.arsenal {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.athleti {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.bayern {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.athleti {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.madrid {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.athleti {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.united {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.roma {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.psg {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.barca {
+    top: 47vh;
+    display: none;
+  }
+
+  .jersey-section-1.adidas.athleti {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.chelsea {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.inter {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.gala {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.spurs {
+    top: 47vh;
+  }
+
+  .jersey-section-1.adidas.juve {
+    top: 47vh;
+  }
+
+  .case_box.juve {
+    margin-left: 200px;
+  }
+
+  .case_box.nigeria {
+    margin-left: 400px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .case_box.nike {
+    margin-left: 350px;
+  }
+
+  .main_image._2.nigeria {
+    top: 276px;
+  }
+
+  .footer-home.old {
+    display: none;
+  }
+
+  .next-page.nigeria {
+    width: auto;
+    height: 100px;
+  }
+
+  .previous-image.nigeria {
+    display: block;
+  }
+}
+
