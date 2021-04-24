@@ -6836,6 +6836,10 @@ img {
   border-radius: 50%;
 }
 
+.div-block-20 {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   .logo.psg.w--current {
     opacity: 1;
@@ -7925,6 +7929,50 @@ img {
 
   .hover.image-11.juve {
     max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-20 {
+    position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #1b1d1e;
+  }
+
+  .paragraph-4 {
+    position: absolute;
+    top: 50vh;
+    width: 60vw;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .image-23 {
+    position: absolute;
+    top: 30vh;
+    width: 15vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .paragraph-4 {
+    width: 75vw;
   }
 }
 
