@@ -1229,6 +1229,7 @@ img {
 
 .outer._4.nike {
   height: 6400px;
+  margin-top: -275px;
 }
 
 .outer._4.adidas {
@@ -7039,6 +7040,7 @@ img {
 
   .outer._4.nike {
     height: 6600px;
+    margin-top: -200px;
   }
 
   .outer._4.adidas {
@@ -7519,11 +7521,15 @@ img {
   }
 
   .text-block-3.juve {
-    margin-top: -75px;
+    margin-top: auto;
   }
 
   .text-block-3.nike {
     margin-top: 25px;
+  }
+
+  .next-page.adidas {
+    display: none;
   }
 
   .next-image.nigeria {
@@ -7915,6 +7921,10 @@ img {
 
   .previous-image.nigeria {
     display: block;
+  }
+
+  .hover.image-11.juve {
+    max-width: 700px;
   }
 }
 
